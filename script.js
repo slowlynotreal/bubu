@@ -1,3 +1,6 @@
+const bgMusic = new Audio("music.mp3");
+bgMusic.loop = true;
+bgMusic.volume = 0.35;
 // Cursor following effect
 const cursor = document.querySelector('.cursor');
 document.addEventListener('mousemove', (e) => {
