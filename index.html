@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Happy Girlfriend's Day ❤️</title>
+<style>
+body{margin:0;font-family:Arial;background:linear-gradient(#ffd6e7,#fff7fb);display:flex;justify-content:center;align-items:center;height:100vh;overflow:hidden}
+.card{max-width:420px;width:90%;background:#fff;padding:24px;border-radius:18px;box-shadow:0 10px 30px rgba(0,0,0,.15);text-align:center}
+button{padding:12px 22px;border:none;border-radius:24px;background:#ff5a93;color:#fff;cursor:pointer}
+#letter{display:none;text-align:left;line-height:1.6;margin-top:18px}
+img{width:100%;border-radius:12px;margin-top:12px}
+.p{position:fixed;top:-20px;font-size:20px;animation:f 8s linear infinite}
+@keyframes f{to{transform:translateY(110vh) rotate(360deg)}}
+</style></head>
+<body>
+<div class="card">
+<h1>Happy Girlfriend's Day ❤️</h1>
+<p>For my Bubu 🌸</p>
+<p><b>24 August 2025</b></p>
+<button onclick="document.getElementById('letter').style.display='block';this.style.display='none'">Open My Letter 💌</button>
+<div id="letter">
+<p>Dear Bubu,<br><br>
+Happy Girlfriend's Day ❤️<br><br>
+Thank you for making my life brighter ever since <b>24 August 2025</b>.<br><br>
+Whether we're together in person, laughing over something random, or even just spending time together under the sakura trees, every memory with you means the world to me.<br><br>
+You make ordinary days feel special, and I'm grateful I get to call you mine.<br><br>
+I hope we make countless more memories together.<br><br>
+I love you.<br><br>
+Forever yours,<br>❤️ Haruu</p>
+<p><b>🎵 Play "UNDERSTAND – keshi" while reading.</b></p>
+<img src="PHOTO1.jpg">
+<img src="PHOTO2.jpg">
+</div>
+</div>
+<script>
+for(let i=0;i<35;i++){let d=document.createElement('div');d.className='p';d.innerHTML='🌸';d.style.left=Math.random()*100+'vw';d.style.animationDuration=(5+Math.random()*5)+'s';d.style.animationDelay=Math.random()*5+'s';document.body.appendChild(d);}
+</script>
+</body></html>
