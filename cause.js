@@ -146,3 +146,16 @@ document.addEventListener('mousemove', (e) => {
 
 // Create initial floating elements
 setInterval(createFloatingElement, 2000);
+const music = document.getElementById("bgMusic");
+
+if (sessionStorage.getItem("playMusic") === "true") {
+    music.volume = 0.35;
+
+    music.play().catch(() => {
+        document.addEventListener(
+            "click",
+            () => music.play(),
+            { once: true }
+        );
+    });
+}
