@@ -1,12 +1,7 @@
 const bgMusic = new Audio("music.mp3");
 bgMusic.loop = true;
 bgMusic.volume = 0.35;
-// Cursor following effect
-const cursor = document.querySelector('.cursor');
-document.addEventListener('mousemove', (e) => {
-    cursor.style.left = e.clientX + 'px';
-    cursor.style.top = e.clientY + 'px';
-});
+
 
 // Typing effect for greeting
 const greetingText = "Hey You Know What! You're the most adorable human i ever met! 💖";
