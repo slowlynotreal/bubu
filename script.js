@@ -1,6 +1,4 @@
-const bgMusic = new Audio("music.mp3");
-bgMusic.loop = true;
-bgMusic.volume = 0.35;
+
 
 
 // Typing effect for greeting
@@ -82,12 +80,19 @@ window.addEventListener('load', () => {
 
         // Smooth page transition on click
         button.addEventListener('click', () => {
-            gsap.to('body', {
-                opacity: 0,
-                duration: 1,
-                onComplete: () => {
-                    window.location.href = 'cause.html'; // Replace with the actual URL of the next page
-                }
-            });
-        });
+
+    const music = document.getElementById("bgMusic");
+
+    if (music) {
+        music.volume = 0.35;
+        music.play().catch(() => {});
+    }
+
+    gsap.to('body', {
+        opacity: 0,
+        duration: 1,
+        onComplete: () => {
+            window.location.href = 'cause.html';
+        }
     });
+});
