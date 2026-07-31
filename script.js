@@ -92,6 +92,7 @@ window.addEventListener('load', () => {
         opacity: 0,
         duration: 1,
         onComplete: () => {
+            sessionStorage.setItem("playMusic", "true");
             window.location.href = 'cause.html';
         }
     });
